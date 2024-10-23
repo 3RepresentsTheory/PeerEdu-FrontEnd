@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <div class="login-box">
-      <h2>用户登录/注册</h2>
+      <h2>用户登录</h2>
       <form>
         <div class="input-group">
           <label for="username">请输入邮箱</label>
@@ -21,11 +21,29 @@
         </div>
         <div class="actions">
           <button type="submit" class="login-btn">登录</button>
-          <a href="#" class="link">忘记密码</a>
-          <a href="#" class="link">立即注册</a>
+          <a href="#" class="link" id="forgot-password-btn">忘记密码</a>
+          <a href="#" class="link" id="register-btn">立即注册</a>
         </div>
       </form>
     </div>
   </div>
+
+  <script>
+    // 引入 Electron 的 ipcRenderer 模块
+    const { ipcRenderer } = require('electron');
+
+    // 绑定 "立即注册" 按钮的点击事件
+    document.getElementById('register-btn').addEventListener('click', () => {
+      ipcRenderer.send('navigate-to-register'); // 通知主进程跳转到注册页面
+    });
+
+    // 绑定 “忘记密码” 按钮的点击事件
+    document.getElementById('forgot-password-btn').addEventListener('click', (event) => {
+      event.preventDefault();
+      ipcRenderer.send('navigate-to-forgot-password');
+    });
+
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册页面</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-box">
+      <h2>新用户注册</h2>
+      <form>
+        <div class="register-input-group">
+          <label for="username">请输入用户名</label>
+          <input type="text" id="username" name="username" placeholder="用户名">
+        </div>
+
+        <div class="register-input-group">
+          <label for="email">请输入邮箱</label>
+          <input type="email" id="email" name="email" placeholder="邮箱">
+        </div>
+
+        <div class="register-input-group register-code-group">
+          <label for="verification-code">请输入验证码</label>
+          <input type="text" id="verification-code" name="verification-code" placeholder="验证码">
+          <button type="button" id="send-code-btn" class="send-code-btn">发送验证码</button>
+        </div>
+
+        <div class="register-input-group">
+          <label for="password">请输入密码</label>
+          <input type="password" id="password" name="password" placeholder="密码">
+        </div>
+
+        <div class="register-input-group">
+          <label for="confirm-password">请再次输入密码</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="确认密码">
+        </div>
+
+        <div class="register-checkbox-group">
+          <input type="checkbox" id="agree" name="agree">
+          <label for="agree">已阅读并同意 <a href="#">《服务协议及隐私政策》</a></label>
+        </div>
+
+        <button type="submit" class="register-submit">注册</button>
+
+        <div class="register-footer">
+          <span>已有账号？</span>
+          <a href="#" id="login-btn" class="register-login-link">返回登录</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    // 绑定 "发送验证码" 按钮的点击事件
+    document.getElementById('send-code-btn').addEventListener('click', () => {
+      const email = document.getElementById('email').value;
+      if (email) {
+        console.log('请求发送验证码给: ', email); // 可替换为后端请求逻辑
+        // 在此处调用后端 API 发送验证码
+      } else {
+        alert('请输入邮箱地址');
+      }
+    });
+
+    // 返回登录页面的跳转事件
+    document.getElementById('login-btn').addEventListener('click', (event) => {
+      event.preventDefault();
+      ipcRenderer.send('navigate-to-login'); // 跳转到登录页面
+    });
+  </script>
+</body>
+</html>
