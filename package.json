@@ -1,0 +1,23 @@
+{
+  "name": "peeredu-frondend",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/3RepresentsTheory/PeerEdu-FrontEnd.git"
+  },
+  "author": "DBY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3RepresentsTheory/PeerEdu-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/3RepresentsTheory/PeerEdu-FrontEnd#readme",
+  "description": "This is PeerEdu Project",
+  "devDependencies": {
+    "electron": "^33.0.2"
+  }
+}
