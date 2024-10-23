@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <title>原型页面</title>
+</head>
+
+<body>
+    <!-- 引入 header -->
+    <div id="header-container"></div>
+
+    <main>
+        <h1>欢迎来到网站原型</h1>
+        <p>这里是一些示例内容。</p>
+        <p>我们使用electron构建桌面应用，所以footer是不重要的，页面原型中只有header，团队通过本页面的方法使用header。这样一来，我们的代码简洁而一致。</p>        
+    </main>
+
+    <script>
+        // 动态加载 header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+                // 载入 header.js
+                const script = document.createElement('script');
+                script.src = 'header.js';
+                document.body.appendChild(script);
+            });
+    </script>
+</body>
+
+</html>
