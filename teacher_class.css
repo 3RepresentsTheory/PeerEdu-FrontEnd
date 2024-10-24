@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    width: 90%;
+}
+
+/* Student List */
+.student-list {
+    width: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-list h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.student-list ul {
+    list-style-type: none;
+}
+
+.student-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.student-list span {
+    font-weight: bold;
+    color: green;
+}
+
+/* Middle Control Panel */
+.control-panel {
+    width: 30%;
+    text-align: center;
+}
+
+.blue-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blue-button:hover {
+    background-color: #2980b9;
+}
+
+/* Toggle Button */
+.toggle {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#toggle {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    background-color: #4cd137;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#toggle:checked+.toggle-label {
+    background-color: #d63031;
+}
+
+/* Course Info */
+.course-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.course-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-info span {
+    font-weight: bold;
+}
+
+/* Right Section: Group List */
+.group-list {
+    width: 35%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-list h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}

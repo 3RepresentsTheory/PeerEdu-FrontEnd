@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师上课页面</title>
+    <link rel="stylesheet" href="teacher_class.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Section: Student List -->
+        <div class="student-list">
+            <h2>学生列表</h2>
+            <ul>
+                <li>柴仁 - <span>已签到</span></li>
+                <li>李四 - <span>已签到</span></li>
+                <li>王五 - <span>已签到</span></li>
+                <li>Nico - <span>未签到</span></li>
+                <li>Alex - <span>未签到</span></li>
+                <li>Max - <span>未签到</span></li>
+                <li>Kevin - <span>未签到</span></li>
+                <li>Oscar - <span>未签到</span></li>
+                <li>Charles - <span>未签到</span></li>
+                <li>Carlos - <span>未签到</span></li>
+                <li>Lewis - <span>未签到</span></li>
+                <li>George - <span>未签到</span></li>
+                <li>John - <span>未签到</span></li>
+            </ul>
+        </div>
+
+        <!-- Middle Section: Control Panel -->
+        <div class="control-panel">
+            <button class="blue-button">关闭签到</button>
+            <button class="blue-button">发布小测</button>
+            <button class="blue-button">下课</button>
+
+            <!-- Toggle button for online/offline -->
+            <div class="toggle">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="toggle-label">线上 / 线下</label>
+            </div>
+
+            <!-- Course Info -->
+            <div class="course-info">
+                <h2>课程名称: C语言程序设计</h2>
+                <p>签到/到课: <span>3/45</span></p>
+                <p>上课时长: <span>31:11</span></p>
+                <p>当前小题数: <span>3</span></p>
+            </div>
+        </div>
+
+        <!-- Right Section: Small Group List -->
+        <div class="group-list">
+            <h2>小组列表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>题数</th>
+                        <th>完成人数</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td><a href="#">统计</a>  <a href="#">伙伴帮学</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td><a href="#">统计</a>  <a href="#">伙伴帮学</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td><a href="#">统计</a>  <a href="#">伙伴帮学</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
