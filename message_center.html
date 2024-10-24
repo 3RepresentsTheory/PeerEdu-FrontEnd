@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="message_center.css">
+</head>
+
+<body>
+    <div class="message-center">
+        <!-- 顶部导航栏 -->
+        <div class="tab-menu">
+            <a href="#" class="tab active">全部</a>
+            <a href="#" class="tab">未读</a>
+            <a href="#" class="tab">已读</a>
+        </div>
+
+        <!-- 批量操作按钮 -->
+        <div class="action-buttons">
+            <button class="btn">标记已读</button>
+            <button class="btn">删除</button>
+            <button class="btn">全部已读</button>
+            <button class="btn">全部删除</button>
+        </div>
+
+        <!-- 消息表格 -->
+        <table class="message-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>消息内容</th>
+                    <th>时间</th>
+                    <th>类型</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>你的课程签到失败，请尽快补签</td>
+                    <td>2024-10-12</td>
+                    <td>系统通知</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>你已成功加入班级（xxxxxxxx）</td>
+                    <td>2024-10-12</td>
+                    <td>系统通知</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>你的小组任务xxx待确认</td>
+                    <td>2024-10-12</td>
+                    <td>提示信息</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>系统将于2024年11月9日00:00维护，维护时间预计2小时，届时将无法登录</td>
+                    <td>2024-10-12</td>
+                    <td>系统通知</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>你的消息编号（xxxxx）已经开始，请按时上课</td>
+                    <td>2024-10-12</td>
+                    <td>课堂通知</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 分页器 -->
+        <div class="pagination">
+            <span>共 800 条 每页: 10 条</span>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">45</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

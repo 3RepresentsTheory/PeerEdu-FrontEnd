@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.message-center {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-menu {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    border-bottom: 2px solid #3498db;
+    color: #3498db;
+}
+
+.tab:hover {
+    border-bottom: 2px solid #3498db;
+    color: #3498db;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.message-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.message-table th,
+.message-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-table th {
+    background-color: #f0f0f0;
+}
+
+.message-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #666;
+}
+
+.pagination ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.pagination ul li {
+    margin-left: 10px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    color: #3498db;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination ul li a:hover {
+    background-color: #3498db;
+    color: white;
+}
