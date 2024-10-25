@@ -15,7 +15,7 @@ function createWindow() {
     },
   });
 
-  win.loadFile('index.html'); // 加载登录页面
+  win.loadFile('message_center.html'); // 加载登录页面
 
   // 删除默认菜单
   Menu.setApplicationMenu(null);
